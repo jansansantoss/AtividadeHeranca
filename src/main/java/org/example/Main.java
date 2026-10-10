@@ -1,11 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        Aluna aluna = new Aluna();
-        aluna.nome = "Joana";
-        aluna.idade = 27;
-        aluna.curso = "Análise de Sistemas";
+        Aluna ana = new Aluna();
+        ana.nome = "Aline";
+        ana.idade = 20;
+        ana.curso = "Engenharia de Software";
 
-        aluna.apresentar();
-        aluna.estudar();
+        Professora flora = new Professora();
+        flora.nome = "Flora";
+        flora.idade = 40;
+        flora.disciplina = "Programação";
+
+        ana.apresentar();
+        ana.estudar();
+
+        flora.apresentar();
+        flora.lancarNota("Ana", 9.5);
     }
 }
